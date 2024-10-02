@@ -9,61 +9,48 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Jednoduchá sčítací kalkulačka"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
 
-
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Zadejte jméno"
-            android:textColor="@color/myColor01"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"/>
-
-        <EditText
-            android:id="@+id/etSurname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Zadejte příjmení"
-            android:textColor="@color/myColor02"
-            android:layout_weight="1"/>
-    </LinearLayout>
 
     <EditText
-        android:id="@+id/etPlace"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Zadejte obec"
+        android:id="@+id/etNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:inputType="number"
+        android:hint="Zadejte první číslo"
         android:textColor="@color/myColor01"/>
+
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:inputType="number"
+        android:hint="Zadejte druhé číslo"
+        android:layout_marginRight="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/etAge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number"
-            android:hint="Věk"
-            android:layout_marginRight="10dp"/>
 
         <Button
-            android:id="@+id/btnSend"
+            android:id="@+id/btnCalculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:text="@string/btn_send"
+            android:backgroundTint="@color/myColor01"
+            android:textColor="@color/myColor03"
+            android:textStyle="bold"
+            android:text="@string/btn_calculate"
             android:textSize="18sp"
             android:layout_marginRight="10dp"/>
 
@@ -74,6 +61,7 @@
             android:layout_weight="4"
             android:backgroundTint="@color/myColor02"
             android:textColor="@color/myColor03"
+            android:textStyle="bold"
             android:text="@string/btn_delete"
             android:textSize="18sp"/>
 
@@ -83,7 +71,7 @@
         android:id="@+id/tvInformation"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:hint="Informace"
+        android:hint="Váš výsledek"
         android:layout_marginTop="20dp"
         android:padding="20dp"
         android:textSize="20sp"/>
