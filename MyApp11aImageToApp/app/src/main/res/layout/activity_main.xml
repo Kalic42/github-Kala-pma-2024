@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView pro zobrazení obrázku -->
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:contentDescription="Selected Image" />
+
+    <!-- Tlačítko pro výběr obrázku -->
+    <Button
+        android:id="@+id/btnTakeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image" />
+
+    <!-- Tlačítko pro rotaci obrázku -->
+    <Button
+        android:id="@+id/btnRotateImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotate Image" />
+
+    <!-- Tlačítko pro horizontální zrcadlení obrázku -->
+    <Button
+        android:id="@+id/btnFlipImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flip Image" />
+
+</LinearLayout>

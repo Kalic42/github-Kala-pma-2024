@@ -1,0 +1,136 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- Rámeček pro skóre a čas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#dcdcdc"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <!-- Skóre -->
+        <TextView
+            android:id="@+id/ScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"/>
+
+        <!-- Čas -->
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Otázka uprostřed -->
+    <TextView
+        android:id="@+id/QuestionTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"/>
+
+    <!-- Rámeček pro odpovědi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- První řádek odpovědí -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="answer_1"
+                android:textSize="18sp"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="answer_2"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Druhý řádek odpovědí -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="answer_3"
+                android:textSize="18sp"
+                android:backgroundTint="#FFC107"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="answer_4"
+                android:textSize="18sp"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Stav hry (alert) -->
+    <TextView
+        android:id="@+id/AlertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jdeme na to!"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
