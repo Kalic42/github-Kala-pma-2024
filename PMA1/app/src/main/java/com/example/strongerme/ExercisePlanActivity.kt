@@ -100,30 +100,30 @@ class ExercisePlanActivity : AppCompatActivity() {
                 Exercise("Dřepy najedné noze", "Proveďte 15 dřepů na každé noze s přidržením", 2),
                 Exercise("Kliky", "Proveďte 30 kliků s nataženými nohami", 2),
                 Exercise("Plank", "Držte 60 vteřin plank s nataženými nohami", 2),
-                Exercise("Výpady", "Výpady s většími pohyby", 2),
-                Exercise("Mountain Climbers", "Proveďte Mountain Climbers", 2),
-                Exercise("Jumping Jacks", "Skákejte s ruce i nohama", 2),
-                Exercise("Ruské twisty", "Provádějte ruské twisty pro zpevnění středu těla", 2), // Přidán nový cvik
-                Exercise("Bicepsové zdvihy", "Proveďte bicepsové zdvihy pro posílení paží", 2), // Přidán nový cvik
-                Exercise("Výpony na lýtka", "Proveďte výpony na lýtka pro posílení dolních končetin", 2) // Přidán nový cvik
-            ).shuffled().take(6) // Náhodně vybere 6 cviků z 9
+                Exercise("Výpady", "Proveďte 20 výpadů s výskokem při výměně nohou", 2),
+                Exercise("Sedy-lehy", "Proveďte 20 sedů-lehů se zapřenými nohami", 2),
+                Exercise("Panák", "skákejte panáka 2 minuty v kuse", 2),
+                Exercise("Skok přes švihadlo", "2 minuty v kuse skákejte přes švihadlo", 2),
+                Exercise("Běh", "Proveďte 5 minutový běh", 2),
+                Exercise("Výpony na lýtka", "Proveďte 20 výponů na lýtka", 2)
+            ).shuffled().take(6)
 
             "hard" -> listOf(
-                Exercise("Dřepy s váhou", "Přidejte váhu pro náročnější dřepy", 2),
-                Exercise("Kliky s nohama zvednutýma", "Provádějte kliky s nohama zvednutýma", 2),
-                Exercise("Plank s nohama zvednutýma", "Udržujte plank s nohama zvednutýma", 2),
-                Exercise("Burpees", "Maximální intenzita Burpees", 2),
-                Exercise("Skákání přes švihadlo", "Skákání přes švihadlo s rychlým tempem", 2),
-                Exercise("Pull-ups", "Proveďte pull-upy na hrazdě", 2),
-                Exercise("Squat Jumps", "Skákání do dřepu", 2),
-                Exercise("Push-ups", "Provádějte push-upy na plný rozsah", 2),
-                Exercise("Dřepy s výskokem", "Skákejte po každém dřepu", 2),
-                Exercise("Deadlifts", "Proveďte mrtvé tahy pro posílení celého těla", 2), // Přidán nový cvik
-                Exercise("Plank s rotací", "Udržujte plank s rotací těla pro zpevnění trupu", 2), // Přidán nový cvik
-                Exercise("Skákání do dřepu", "Proveďte skákání do dřepu pro zlepšení výbušnosti", 2), // Přidán nový cvik
-                Exercise("Sklapovačky", "Proveďte sklapovačky pro zpevnění břicha", 2), // Přidán nový cvik
-                Exercise("Kettlebell swings", "Použijte kettlebell pro trénink celého těla", 2) // Přidán nový cvik
-            ).shuffled().take(9) // Náhodně vybere 9 cviků z 14
+                Exercise("Dřepy s váhou", "proveďte 30 dřepů s přidanou váhou", 2),
+                Exercise("Kliky se zvednutou nohou", "Proveďte 15 kliků se zvednutou nohou, poté vystřídejte", 2),
+                Exercise("Plank se zvednutou nohou", "Držte 60 vteřin plank se zvednutou nohou, poté vystřídejte", 2),
+                Exercise("Výpady", "Proveďte 30 výpadů s přidanou váhou", 2),
+                Exercise("Skákání přes švihadlo", "Skákejte přes švihadlo s rychlým tempem", 2),
+                Exercise("přítahy", "Proveďte 20 přítahů na hrazdě", 2),
+                Exercise("Dřepy s výskokem", "Proveďte 50 dřepů s výskokem", 2),
+                Exercise("Dřepy na jedné noze", "Proveďte 20 dřepů na každé noze", 2),
+                Exercise("Plank na boku", "Držte plank opřený a loket s nohami na zemi", 2),
+                Exercise("Biceps zdvihy", "Proveďte 20 zdvihů na biceps se závažím", 2),
+                Exercise("Výskoky na bednu", "Proveďte 20 výskoků na bednu či vyšší předmět", 2),
+                Exercise("Zadní výpady", "Proveďte 30 výpadů s pokládáním nohou za sebe", 2),
+                Exercise("Sklapovačky", "Proveďte 40 sklapovaček pro zpevnění břicha", 2),
+                Exercise("Muscle up", "Proveďte muscle up na hrazdě", 2)
+            ).shuffled().take(9)
 
             else -> emptyList()
         }

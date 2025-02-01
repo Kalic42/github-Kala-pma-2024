@@ -3,14 +3,14 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <!-- Calendar View -->
+
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"/>
 
-    <!-- TextView pro zobrazení stavu -->
+
     <TextView
         android:id="@+id/statusTextView"
         android:layout_width="wrap_content"
@@ -21,7 +21,6 @@
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
-    <!-- Tlačítko pro zahájení cvičení -->
     <Button
         android:id="@+id/btnStartExercise"
         android:layout_width="240dp"
@@ -32,7 +31,6 @@
         android:text="Začít cvičení ▶"
         android:textSize="20sp" />
 
-    <!-- Tlačítko pro zobrazení uživatelských informací -->
     <Button
         android:id="@+id/btnShowUserInfo"
         android:layout_width="99dp"

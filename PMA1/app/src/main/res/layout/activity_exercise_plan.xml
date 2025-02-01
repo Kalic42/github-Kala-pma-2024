@@ -18,13 +18,13 @@
             android:layout_marginBottom="16dp"
             android:gravity="center"/>
 
-        <!-- RecyclerView pro zobrazení cviků -->
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvExercises"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" /> <!-- Změněno na wrap_content -->
+            android:layout_height="wrap_content" />
 
-        <!-- Horizontální LinearLayout pro tlačítka -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,6 @@
             android:layout_marginTop="16dp"
             android:gravity="center">
 
-            <!-- Tlačítko pro "Nesplněno" -->
             <Button
                 android:id="@+id/btnFail"
                 android:layout_width="0dp"
@@ -42,9 +41,9 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#E71D1D" /> <!-- Červená barva -->
+                android:backgroundTint="#E71D1D" />
 
-            <!-- Tlačítko pro "Splněno" -->
+
             <Button
                 android:id="@+id/btnSuccess"
                 android:layout_width="0dp"
@@ -54,7 +53,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#00FF00" /> <!-- Zelená barva -->
+                android:backgroundTint="#00FF00" />
         </LinearLayout>
 
     </LinearLayout>

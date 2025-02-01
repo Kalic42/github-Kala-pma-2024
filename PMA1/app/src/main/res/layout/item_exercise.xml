@@ -29,7 +29,6 @@
             android:layout_marginTop="4dp" />
     </LinearLayout>
 
-    <!-- Zaškrtávací tlačítko pro označení splnění cvičení -->
     <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"

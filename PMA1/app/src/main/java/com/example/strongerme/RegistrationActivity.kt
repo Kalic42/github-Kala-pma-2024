@@ -38,7 +38,7 @@ class RegistrationActivity : AppCompatActivity() {
                     apply()
                 }
 
-                startActivity(Intent(this, DifficultySelectionActivity::class.java))
+                startActivity(Intent(this, CalendarActivity::class.java))
                 finish()
             }
         }

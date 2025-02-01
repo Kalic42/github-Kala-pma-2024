@@ -6,7 +6,6 @@
     android:background="@android:color/white"
     android:layout_gravity="start">
 
-    <!-- Jméno -->
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
@@ -16,7 +15,6 @@
         android:textColor="@android:color/black"
         android:layout_marginBottom="8dp" />
 
-    <!-- Věk -->
     <TextView
         android:id="@+id/tvAge"
         android:layout_width="wrap_content"
@@ -26,7 +24,6 @@
         android:textColor="@android:color/black"
         android:layout_marginBottom="8dp" />
 
-    <!-- Výška -->
     <TextView
         android:id="@+id/tvHeight"
         android:layout_width="wrap_content"
@@ -36,7 +33,6 @@
         android:textColor="@android:color/black"
         android:layout_marginBottom="8dp" />
 
-    <!-- Váha -->
     <TextView
         android:id="@+id/tvWeight"
         android:layout_width="wrap_content"
