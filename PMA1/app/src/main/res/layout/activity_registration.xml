@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Nadpis -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrace uživatele"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Pole pro jméno -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jméno"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp" /> <!-- Zajištění dostatečné dotykové plochy -->
+
+    <!-- Pole pro věk -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Věk"
+        android:textStyle="italic"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp" /> <!-- Zajištění dostatečné dotykové plochy -->
+
+    <!-- Pole pro výšku -->
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Výška (cm)"
+        android:textStyle="italic"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp" /> <!-- Zajištění dostatečné dotykové plochy -->
+
+    <!-- Pole pro váhu -->
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Váha (kg)"
+        android:textStyle="italic"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" /> <!-- Zajištění dostatečné dotykové plochy -->
+
+    <!-- Tlačítko pro registraci -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Registrovat ✔"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" /> <!-- Zajištění dostatečné dotykové plochy -->
+</LinearLayout>
+

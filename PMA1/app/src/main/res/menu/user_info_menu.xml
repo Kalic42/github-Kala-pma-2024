@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/user_name" android:title="Jméno: " />
+        <item android:id="@+id/user_age" android:title="Věk: " />
+        <item android:id="@+id/user_height" android:title="Výška: " />
+        <item android:id="@+id/user_weight" android:title="Váha: " />
+
+</menu>

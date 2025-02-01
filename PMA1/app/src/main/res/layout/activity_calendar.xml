@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Calendar View -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"/>
+
+    <!-- TextView pro zobrazení stavu -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="-24dp"
+        android:text="Klikněte na dnešní den pro aktualizaci"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Tlačítko pro zahájení cvičení -->
+    <Button
+        android:id="@+id/btnStartExercise"
+        android:layout_width="240dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/statusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Začít cvičení ▶"
+        android:textSize="20sp" />
+
+    <!-- Tlačítko pro zobrazení uživatelských informací -->
+    <Button
+        android:id="@+id/btnShowUserInfo"
+        android:layout_width="99dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:text="👤"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</RelativeLayout>
